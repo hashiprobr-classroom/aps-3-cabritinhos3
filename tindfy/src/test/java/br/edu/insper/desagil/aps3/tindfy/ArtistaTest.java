@@ -1,6 +1,6 @@
 package br.edu.insper.desagil.aps3.tindfy;
 
-import br.edu.insper.desagil.aps3.tindfy.model.Artista;
+import br.edu.insper.desagil.aps3.tindfy.Artista;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

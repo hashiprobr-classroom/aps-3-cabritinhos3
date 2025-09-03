@@ -1,10 +1,10 @@
 package br.edu.insper.desagil.aps3.tindfy;
 
-import br.edu.insper.desagil.aps3.tindfy.model.Artista;
+import br.edu.insper.desagil.aps3.tindfy.Artista;
 
 public class Musica {
 
-    private br.edu.insper.desagil.aps3.tindfy.model.Artista artista;
+    private br.edu.insper.desagil.aps3.tindfy.Artista artista;
 
     private String titulo;
 

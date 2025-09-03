@@ -1,8 +1,8 @@
 package br.edu.insper.desagil.aps3.tindfy;
 
-import br.edu.insper.desagil.aps3.tindfy.model.Artista;
-import br.edu.insper.desagil.aps3.tindfy.model.Musica;
-import br.edu.insper.desagil.aps3.tindfy.model.Usuario;
+import br.edu.insper.desagil.aps3.tindfy.Artista;
+import br.edu.insper.desagil.aps3.tindfy.Musica;
+import br.edu.insper.desagil.aps3.tindfy.Usuario;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;

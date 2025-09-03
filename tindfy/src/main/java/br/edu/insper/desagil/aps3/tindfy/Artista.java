@@ -1,4 +1,4 @@
-package br.edu.insper.desagil.aps3.tindfy.model;
+package br.edu.insper.desagil.aps3.tindfy;
 
 public class Artista extends Pessoa{
 
