@@ -11,6 +11,8 @@ public class Musica {
         this.titulo = titulo;
     }
 
+    public Musica(){}
+
     public Artista getArtista() {
         return artista;
     }

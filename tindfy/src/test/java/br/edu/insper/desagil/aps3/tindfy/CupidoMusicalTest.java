@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -17,8 +18,12 @@ public class CupidoMusicalTest {
         Artista a = new Artista(1, "Artista");
         Musica m = new Musica(a, "Hit");
 
-        Usuario u1 = new Usuario(1, "A", new ArrayList<>(Arrays.asList(m)));
-        Usuario u2 = new Usuario(2, "B", new ArrayList<>(Arrays.asList(m)));
+        List<Musica> musicas = new ArrayList<>();
+
+        musicas.add(m);
+
+        Usuario u1 = new Usuario(1, "A", musicas);
+        Usuario u2 = new Usuario(2, "B", musicas);
 
         CupidoMusical c = new CupidoMusical();
 
@@ -31,8 +36,13 @@ public class CupidoMusicalTest {
         Musica m1 = new Musica(a, "Hit1");
         Musica m2 = new Musica(a, "Hit2");
 
-        Usuario u1 = new Usuario(1, "A", new ArrayList<>(Arrays.asList(m1)));
-        Usuario u2 = new Usuario(2, "B", new ArrayList<>(Arrays.asList(m2)));
+        List<Musica> musicas = new ArrayList<>();
+
+        musicas.add(m1);
+        musicas.add(m2);
+
+        Usuario u1 = new Usuario(1, "A", musicas);
+        Usuario u2 = new Usuario(2, "B", musicas);
 
         CupidoMusical c = new CupidoMusical();
         c.darLike(u1.getId(), u2.getId());
@@ -46,8 +56,11 @@ public class CupidoMusicalTest {
         Artista a = new Artista(1, "Artista");
         Musica m = new Musica(a, "Hit");
 
-        Usuario u1 = new Usuario(1, "A", new ArrayList<>(Arrays.asList(m)));
-        Usuario u2 = new Usuario(2, "B", new ArrayList<>(Arrays.asList(m)));
+        List<Musica> musicas = new ArrayList<>();
+        musicas.add(m);
+
+        Usuario u1 = new Usuario(1, "A", musicas);
+        Usuario u2 = new Usuario(2, "B", musicas);
 
         CupidoMusical c = new CupidoMusical();
         c.darLike(u1.getId(), u2.getId());
