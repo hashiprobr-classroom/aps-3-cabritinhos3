@@ -7,6 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class ArtistaTest {
 
+
     @Test
     public void constroi() {
         Artista a = new Artista(0, "Teste");
